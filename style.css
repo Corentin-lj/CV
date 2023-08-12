@@ -1,0 +1,132 @@
+
+
+
+/* Texte du titre */
+text {
+    margin-left: 10px;
+    margin-bottom: 5%;
+}
+
+/* Fond de page */
+body {
+    background-color: antiquewhite;
+}
+
+/* Header de la page */
+header {
+    position:sticky ;
+    top:0;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+/* Chaque sous partie */
+section{
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+/* Titre de la page */
+h1 {
+    color:black;
+    text-align: center;
+    background-image: linear-gradient(140deg, rgb(255, 252, 252), #ffe4c4 96%);
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    display: block;
+    position: sticky;
+    margin-top: 0%;
+}
+
+/* Texte du titre */
+h2 {
+    text-align: center;
+}
+
+/* Chaque partie de la page */
+div {
+    margin-right: 2%;
+    margin-left: 2%;
+    box-shadow: -10px 10px 0px rgba(33, 33, 33, 1), -20px 20px 0px rgba(33, 33, 33, 0.7), -30px 30px 0px rgba(33, 33, 33, 0.4), -40px 40px 0px rgba(33, 33, 33, 0.1);
+}
+
+
+/* Marqueur "point" des listes */
+li::marker{
+    content:attr(data-emoji);
+}
+
+/* Sous liste */
+dl{
+    font-style: italic;
+}
+
+
+.animate {
+    animation-duration: 0.5s;
+    animation-delay: 0.5s;
+    animation-name: animate-fade;
+    animation-timing-function: cubic-bezier(.26, .53, .74, 1.48);
+    animation-fill-mode: backwards;
+}
+  
+/* Glow In */
+.animate.glow {
+    animation-name: animate-glow;
+    animation-timing-function: ease;
+  }
+
+  @keyframes animate-glow {
+    0% {
+      opacity: 0;
+      filter: brightness(3) saturate(3);
+      transform: scale(0.5, 0.5);
+    }
+  
+    100% {
+      opacity: 1;
+      filter: brightness(1) saturate(1);
+      transform: scale(1, 1);
+    }
+  }
+  /* Délai titre page */
+  .delay-0 {
+    animation-delay: 0.3s;
+  }
+  .delay-1 {
+    animation-delay: 0.6s;
+  }
+  .delay-2 {
+    animation-delay: 0.9s;
+  }
+  .delay-3 {
+    animation-delay: 1.2s;
+  }
+ 
+  footer{
+    clear: both;
+    height: 50px;
+    background-color: antiquewhite;
+    margin-top: 10%;
+  }
+
+
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+  
+  
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+  }
+
+  /* Linkedin */
+  .fa-linkedin {
+    background: #55ACEE;
+    color: white;
+  }
